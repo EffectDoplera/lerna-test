@@ -12,7 +12,14 @@
     "yarn": ">=1.22.4 <2",
     "npm": "Please use yarn"
   },
+  "scripts": {
+    "build": "tsc --build",
+    "publish:monorepo": "yarn build && lerna version && lerna publish from-git"
+  },
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@tsconfig/node16": "^1.0.2",
+    "lerna": "^4.0.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
   }
 }
