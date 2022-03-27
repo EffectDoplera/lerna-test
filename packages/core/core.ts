@@ -1,3 +1,3 @@
 export const sayHello = (): void => {
-    console.log('Hello!');
+    console.log('Hello! Hello!');
 }

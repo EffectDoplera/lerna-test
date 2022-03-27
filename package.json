@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "tsc --build",
-    "publish:monorepo": "yarn build && lerna version && lerna publish from-git"
+    "publish:monorepo": "yarn build && lerna version"
   },
   "devDependencies": {
     "@tsconfig/node16": "^1.0.2",
